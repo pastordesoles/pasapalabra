@@ -551,7 +551,6 @@ let questions;
 let seconds = 180;
 let isPlaying = true;
 
-
 const questionSelector = () => {
   // Aqui es decideix quin dels 3 set s'agafa
   switch (Math.floor(Math.random() * 3) + 1) {
@@ -581,7 +580,7 @@ const showQuestions = () => {
       hint.innerHTML = questions[index].letter;
       definition.innerHTML = questions[index].question;
       let x = document.getElementsByClassName("item");
-    x[index].style.backgroundImage = "radial-gradient(circle, grey, black)";
+      x[index].style.backgroundImage = "radial-gradient(circle, grey, black)";
     } else if (questions[index].status === 1) {
       index += 1;
       showQuestions();
@@ -608,7 +607,6 @@ function checkUserAnswer() {
     x[index].style.backgroundImage = "radial-gradient(circle, green, black)";
     questions[index].status = 1;
     correct += 1;
-    
   } else if (answers.toLowerCase() !== questions[index].answer) {
     let x = document.getElementsByClassName("item");
     x[index].style.backgroundImage = "radial-gradient(circle, red, black)";
@@ -634,6 +632,7 @@ function checkUserAnswer() {
 const pasaPalabra = () => {
   let x = document.getElementsByClassName("item");
   x[index].style.backgroundImage = "radial-gradient(circle, #6844bc, #301934)";
+  document.getElementById("respuesta").value = "";
   questions[index].status = 3;
   index += 1;
   showQuestions();
@@ -708,3 +707,10 @@ document.addEventListener("keydown", function (event) {
       break;
   }
 });
+
+const CheckSpace = (event) => {
+  if (event.which == 32) {
+    event.preventDefault();
+    return false;
+  }
+};

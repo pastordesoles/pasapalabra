@@ -74,7 +74,7 @@
         <h2 class="hint" id="hint"></h2>
         <p class="definition" id="definition"></p>
   
-        <input type="text" placeholder="Introduce tu respuesta" class="input-box" id="respuesta">
+        <input type="text" placeholder="Introduce tu respuesta" class="input-box" id="respuesta" onkeypress="CheckSpace(event)">
         <button class="send-button" id="send-button" onclick="checkUserAnswer()">Enviar</button>
         <button class="pasa-button" id="pasa-button" onclick="pasaPalabra()">Pasapalabra</button>
         <button class="stop-button" id="stop-button" onclick="endGame()">Stop</button>
