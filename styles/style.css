@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    min-height: 100vh;
+    min-height: vh;
     flex-wrap: wrap;
     align-items: center;
   }
@@ -153,7 +153,7 @@ body {
   
   #timer {
     display: block;
-    margin-left: 45%;
+    margin-left: 47%;
     width: 2.8125em;
     height: 2.8125em;
     border: 2px solid #fff;
@@ -171,7 +171,7 @@ body {
   
   #aciertos {
     display: block;
-    margin-left: 45%;
+    margin-left: 47%;
     margin-top: 5ch;
     width: 2.8125em;
     height: 2.8125em;
@@ -217,12 +217,11 @@ body {
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-    font-size: 10px;
+    font-size: 20px;
     font-weight: 600;
     color: #fdfdfe;
     text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
       0px 0px 20px #b393d3;
-    margin-bottom: 1ch;
   }
   
   .mensaje {
