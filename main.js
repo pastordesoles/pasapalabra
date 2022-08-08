@@ -690,6 +690,7 @@ document.addEventListener("keydown", function (event) {
         playAgain.classList.contains("hidden")
       ) {
         startGame();
+        timer();
       } else if (
         mensaje.classList.contains("hidden") &&
         playAgain.classList.contains("hidden")
