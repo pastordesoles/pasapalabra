@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+
+  <body>
+
+    <section class="container">
+      
+    
+  <div class="rosco"> 
+    <div class="tittle">
+    Pasapalabra
+    </div>
+  
+  <div class="main">
+      <div class="item a">A</div>
+      <div class="item b">B</div>
+      <div class="item c">C</div>
+      <div class="item d">D</div>
+      <div class="item e">E</div>
+      <div class="item f">F</div>
+      <div class="item g">G</div>
+      <div class="item h">H</div>
+      <div class="item i">I</div>
+      <div class="item j">J</div>
+      <div class="item k">K</div>
+      <div class="item l">L</div>
+      <div class="item m">M</div>
+      <div class="item n">N</div>
+      <div class="item ñ">Ñ</div>
+      <div class="item o">O</div>
+      <div class="item p">P</div>
+      <div class="item q">Q</div>
+      <div class="item r">R</div>
+      <div class="item s">S</div>
+      <div class="item t">T</div>
+      <div class="item u">U</div>
+      <div class="item v">V</div>
+      <div class="item w">W</div>
+      <div class="item x">X</div>
+      <div class="item y">Y</div>
+      <div class="item z">Z</li>
+  </div>
+  
+  <div class="tools">
+    <div id="timer"> 
+    180
+    </div>
+  
+    <div id="aciertos">
+    0
+    </div>
+  </div> 
+  
+  
+  </div>
+  
+  </div>
+  
+  <div class="controls" >
+    <div class="mensaje" id="mensaje">
+      <h2>Bienvenido al Pasapalabra de Xavi</h2>
+      <p>Haz click en jugar para que empiece el tiempo y escribe tus respuestas en el recuadro.<br>
+        Recuerda: no uses tildes <span>😜</span>
+      </p>
+      <button class="play-button" id="play-button" onclick="startGame(); timer();">Jugar</button>
+    </div>
+  
+    <div class="question-console hidden" id="question-console">
+        <h2 class="hint" id="hint"></h2>
+        <p class="definition" id="definition"></p>
+  
+        <input type="text" placeholder="Introduce tu respuesta" class="input-box" id="respuesta">
+        <button class="send-button" id="send-button" onclick="checkUserAnswer()">Enviar</button>
+        <button class="pasa-button" id="pasa-button" onclick="pasaPalabra()">Pasapalabra</button>
+        <button class="stop-button" id="stop-button" onclick="endGame()">Stop</button>
+    </div>
+  
+    <div class="play-again hidden" id="play-again">
+      <h2 class="endgame">Fin del juego!</h2>
+      <p class="score" id="score"></p>
+      <button class="replay" id="replay" onclick="gameAgain();">Jugar de nuevo</button>
+    </div>
+  
+   </div>
+  </section>
+  
+  <footer id="footer">
+    <p>By Xavi <span> 🔥 </span></p>
+  </footer>
+  <script type="text/javascript" src="main.js"></script>
+  </body>
