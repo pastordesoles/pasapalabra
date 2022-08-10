@@ -1,3 +1,17 @@
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;} 
+  #main {width: 25%} 
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+  #main {width: 25%}
+}
+
 body {
     position: relative;
     background-color: #301934;
@@ -10,7 +24,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    min-height: vh;
+    min-height: 100vh;
     flex-wrap: wrap;
     align-items: center;
   }
